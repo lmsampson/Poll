@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mwC-TN-b05">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Combined-->
+        <scene sceneID="Ebh-dD-tr3">
+            <objects>
+                <viewController title="Combined" id="mwC-TN-b05" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1XJ-Kc-5jA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqr-zR-m6j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="328"/>
+                                <connections>
+                                    <segue destination="Wwt-Bi-9df" kind="embed" identifier="EmbedVotingPage" id="oyu-QB-lv2"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2L-t3-7Kb">
+                                <rect key="frame" x="0.0" y="330" width="375" height="337"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="5Yz-w2-hXz" kind="embed" identifier="EmbedResultsTable" id="uFt-7o-GKL"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mqr-zR-m6j" firstAttribute="leading" secondItem="mir-3k-Vy4" secondAttribute="leading" id="AXq-wF-owQ"/>
+                            <constraint firstItem="mqr-zR-m6j" firstAttribute="trailing" secondItem="mir-3k-Vy4" secondAttribute="trailing" id="XNN-Jd-9ih"/>
+                            <constraint firstItem="mqr-zR-m6j" firstAttribute="top" secondItem="1XJ-Kc-5jA" secondAttribute="top" id="cO0-GV-oAp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mir-3k-Vy4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Combined" id="7Jh-UF-aJ3"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUa-Ay-7GP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.399999999999999" y="211.84407796101951"/>
+        </scene>
+        <!--Voting-->
+        <scene sceneID="TJS-7Z-iAb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Voting" id="Wwt-Bi-9df" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T4p-yO-cWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680" y="100"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="HCI-df-0hl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Results" id="5Yz-w2-hXz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYL-5g-FSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="325"/>
+        </scene>
+    </scenes>
+</document>
