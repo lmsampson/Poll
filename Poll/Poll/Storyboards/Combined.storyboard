@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqr-zR-m6j">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="328"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqr-zR-m6j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
                                     <segue destination="Wwt-Bi-9df" kind="embed" identifier="EmbedVotingPage" id="oyu-QB-lv2"/>
                                 </connections>
@@ -37,6 +37,7 @@
                             <constraint firstItem="mqr-zR-m6j" firstAttribute="leading" secondItem="mir-3k-Vy4" secondAttribute="leading" id="AXq-wF-owQ"/>
                             <constraint firstItem="mqr-zR-m6j" firstAttribute="trailing" secondItem="mir-3k-Vy4" secondAttribute="trailing" id="XNN-Jd-9ih"/>
                             <constraint firstItem="mqr-zR-m6j" firstAttribute="top" secondItem="1XJ-Kc-5jA" secondAttribute="top" id="cO0-GV-oAp"/>
+                            <constraint firstItem="mqr-zR-m6j" firstAttribute="centerY" secondItem="1XJ-Kc-5jA" secondAttribute="centerY" id="lGe-Ig-SJc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mir-3k-Vy4"/>
                     </view>

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class VotingViewController: UIViewController {
+class VotingViewController: UIViewController, VoteControllerProtocol {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,10 @@ class VotingViewController: UIViewController {
     }
     
     @IBAction func createVote(_ sender: Any) {
+        guard let name = nameTextField.text,
+        let response = responseTextField.text else { return }
+        
+        voteController?.createVote(withName: name, response: response)
         
     }
     
@@ -35,6 +40,8 @@ class VotingViewController: UIViewController {
     }
     */
 
+    var voteController: VoteController?
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var responseTextField: UITextField!
 }

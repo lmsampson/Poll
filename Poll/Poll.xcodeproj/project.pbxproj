@@ -53,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF219D93210A88F00052F6BE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FF473598210A681700B5E736 /* VoteControllerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		FF473564210A5B0300B5E736 = {
 			isa = PBXGroup;
 			children = (
@@ -76,11 +84,11 @@
 				FF473577210A5B0400B5E736 /* Assets.xcassets */,
 				FF473579210A5B0400B5E736 /* LaunchScreen.storyboard */,
 				FF47357C210A5B0400B5E736 /* Info.plist */,
+				FF219D93210A88F00052F6BE /* Protocols */,
 				FF473586210A5C0000B5E736 /* Model */,
 				FF473587210A5C0900B5E736 /* Model Controllers */,
 				FF47358A210A608300B5E736 /* Storyboards */,
 				FF47358D210A610200B5E736 /* View Controllers */,
-				FF473598210A681700B5E736 /* VoteControllerProtocol.swift */,
 			);
 			path = Poll;
 			sourceTree = "<group>";

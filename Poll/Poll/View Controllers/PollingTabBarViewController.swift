@@ -13,6 +13,7 @@ class PollingTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        passVoteControllerToChildViewControllers()
     }
 
     func passVoteControllerToChildViewControllers() {
