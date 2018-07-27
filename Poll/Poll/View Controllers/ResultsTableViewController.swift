@@ -9,6 +9,8 @@
 import UIKit
 
 class ResultsTableViewController: UITableViewController, VoteControllerProtocol {
+    
+    
 
     // MARK: - Table view data source
 

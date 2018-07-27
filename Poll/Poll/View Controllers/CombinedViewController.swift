@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CombinedViewController: UIViewController {
+class CombinedViewController: UIViewController, VoteControllerProtocol {
 
     // MARK: - Navigation
 
